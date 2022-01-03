@@ -15,6 +15,7 @@ const App = (): JSX.Element => {
     console.log("Saving: ", shoppingList);
     setOpen(false);
   };
+
   const onCancel = () => {
     console.log("onCancel");
     setOpen(false);

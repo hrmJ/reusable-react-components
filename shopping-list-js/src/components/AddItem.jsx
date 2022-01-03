@@ -5,10 +5,6 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 
-// interface AddItemProps {
-//   onSave: (item: ShoppingListItemType) => void;
-// }
-
 export const AddItem = ({ onSave }) => {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState(0);

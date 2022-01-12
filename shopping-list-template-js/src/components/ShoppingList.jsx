@@ -1,13 +1,9 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-export const ShoppingList = ({
-  activeUser,
-}) => {
-
-  return (
-    <div>{activeUser}</div>
-  );
+// kommentti
+export const ShoppingList = ({ activeUser }) => {
+  return <div>{activeUser}</div>;
 };
 
 ShoppingList.propTypes = {

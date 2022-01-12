@@ -8,7 +8,7 @@ import { ShoppingList } from "./components/ShoppingList";
 function App() {
   const [open, setOpen] = React.useState(false);
 
-  const activeUser = "user";
+  const activeUser = "user 1";
 
   return (
     <div>

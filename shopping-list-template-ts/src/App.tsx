@@ -3,12 +3,18 @@ import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 
-import { ShoppingList } from "./components/ShoppingList";
+import { ShoppingList, ShoppingListItem } from "./components/ShoppingList";
 
 function App() {
   const [open, setOpen] = React.useState(false);
 
   const activeUser = "user 1";
+  const items: ShoppingListItem[] = [{ name: "Maito", quantity: 2 }];
+  console.log("original items", items);
+
+  const onSave = async (items: ShoppingListItem[]) => {
+    console.log("Shopping list saved", items);
+  };
 
   return (
     <div>
@@ -27,7 +33,7 @@ function App() {
             p: 4,
           }}
         >
-          <ShoppingList activeUser={activeUser} />
+          <ShoppingList activeUser={activeUser} items={items} onSave={onSave} />
         </Box>
       </Modal>
     </div>
